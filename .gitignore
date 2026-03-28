@@ -1,0 +1,5 @@
+.idea/
+mem.log
+server.pid
+log.txt
+test.sh

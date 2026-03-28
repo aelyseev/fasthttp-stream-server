@@ -1,0 +1,7 @@
+env: prod
+settings:
+  level: info
+  idleTimeout: 30s
+  writeTimeout: 120s
+  concurrency: 256
+  maxBodySize: 107374182400

@@ -1,0 +1,8 @@
+env: local
+settings:
+  level: info
+  idleTimeout: 30s
+  writeTimeout: 120s
+  concurrency: 200
+  # fasthttp default is 4MB. Set large value for streaming large file uploads.
+  maxBodySize: 107374182400
