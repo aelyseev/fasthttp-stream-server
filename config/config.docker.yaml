@@ -5,3 +5,5 @@ settings:
   writeTimeout: 120s
   concurrency: 256
   maxBodySize: 107374182400
+  chunkSize: 10000000
+  serverURL: http://localhost:8081/upload

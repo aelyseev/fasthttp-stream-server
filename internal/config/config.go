@@ -36,9 +36,16 @@ type Settings struct {
 	MaxBodySize  int64         `yaml:"maxBodySize" env-default:"107374182400"`
 }
 
+type Cli struct {
+	Level     LogLevel `yaml:"level" env-required:"true"`
+	ChunkSize int64    `yaml:"chunkSize" env-default:"256"`
+	ServerURL string   `yaml:"serverURL" env-required:"true"`
+}
+
 type Config struct {
 	Env      Environment `yaml:"env" env-default:"local"`
 	Settings Settings    `yaml:"settings" env-required:"true"`
+	Cli      Cli         `yaml:"cli" env-required:"true"`
 }
 
 func loadConfig() *Config {

@@ -6,3 +6,7 @@ settings:
   concurrency: 200
   # fasthttp default is 4MB. Set large value for streaming large file uploads.
   maxBodySize: 107374182400
+cli:
+  level: info
+  chunkSize: 1048576
+  serverURL: http://localhost:8081/upload
